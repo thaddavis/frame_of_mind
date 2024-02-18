@@ -44,9 +44,8 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          action: 'link',
           label: 'Go back',
-          target: 'https://dist-git-main-thaddadavis.vercel.app',
+          action: 'post_redirect',
         },
         {
           label: `Mint 'Frame of Mind' NFT 🧠`,
