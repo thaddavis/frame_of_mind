@@ -5,7 +5,7 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Generate an image of your frame ',
+      label: 'Generate an image of your frame of mind',
     },
   ],
   image: {
@@ -13,7 +13,7 @@ const frameMetadata = getFrameMetadata({
     aspectRatio: '1:1',
   },
   input: {
-    text: 'Tell me a boat story',
+    text: 'Describe your frame of mind',
   },
   postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
 });
