@@ -16,7 +16,7 @@ const frameMetadata = getFrameMetadata({
   input: {
     text: 'Describe your frame of mind',
   },
-  postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
+  postUrl: `${NEXT_PUBLIC_URL}/api/result`,
 });
 
 export const metadata: Metadata = {
