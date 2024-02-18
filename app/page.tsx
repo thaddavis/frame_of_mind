@@ -10,7 +10,7 @@ const frameMetadata = getFrameMetadata({
     },
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/fom.webp`,
+    src: `${NEXT_PUBLIC_URL}/wyfom.webp`,
     aspectRatio: '1:1',
   },
   input: {
