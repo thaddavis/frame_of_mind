@@ -17,13 +17,24 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     text = message.input;
   }
 
-  if (message?.button === 3) {
-    return NextResponse.redirect(
-      'https://www.google.com/search?q=cute+dog+pictures&tbm=isch&source=lnms',
-      { status: 302 },
-    );
-  }
+  // if (message?.button === 3) {
+  //   return NextResponse.redirect(
+  //     'https://www.google.com/search?q=cute+dog+pictures&tbm=isch&source=lnms',
+  //     { status: 302 },
+  //   );
+  // }
 
+  let imgSrc;
+  switch (message?.input) {
+    case 'calm':
+      imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
+      break;
+    case 'caffeinated':
+      imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
+      break;
+    default:
+      imgSrc = `${NEXT_PUBLIC_URL}/fom.webp`;
+  }
   
 
   return new NextResponse(
@@ -34,7 +45,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         },
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/fom.webp`,
+        src: imgSrc,
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
     }),
