@@ -28,10 +28,10 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
+  title: 'What\'s your frame of mind?',
   description: 'LFG',
   openGraph: {
-    title: 'zizzamia.xyz',
+    title: 'fom.xyz',
     description: 'LFG',
     images: [`${NEXT_PUBLIC_URL}/park-1.png`],
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>What's your frame of mind?</h1>
     </>
   );
 }
