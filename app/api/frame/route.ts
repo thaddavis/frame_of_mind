@@ -30,7 +30,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: `Story: ${text} 🌲`,
+          label: `🧠`,
         },
       ],
       image: {
