@@ -1,4 +1,7 @@
-import { getFrameMetadata } from '@coinbase/onchainkit';
+// import { getFrameMetadata } from '@coinbase/onchainkit';
+
+import { getFrameMetadata } from '../helpers/getFrameMetadata';
+
 import type { Metadata } from 'next';
 import { NEXT_PUBLIC_URL } from './config';
 
@@ -8,10 +11,10 @@ const frameMetadata = getFrameMetadata({
       label: 'Generate an image of your frame of mind',
     },
   ],
-  image: {
-    src: `${NEXT_PUBLIC_URL}/park-3.png`,
-    aspectRatio: '1:1',
-  },
+  // image: {
+  //   src: `${NEXT_PUBLIC_URL}/park-3.png`,
+  //   aspectRatio: '1:1',
+  // },
   input: {
     text: 'Describe your frame of mind',
   },
