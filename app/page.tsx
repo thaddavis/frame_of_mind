@@ -5,16 +5,7 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Story time!',
-    },
-    {
-      action: 'link',
-      label: 'Link to Google',
-      target: 'https://www.google.com',
-    },
-    {
-      label: 'Redirect to pictures',
-      action: 'post_redirect',
+      label: 'Generate an image of your frame ',
     },
   ],
   image: {
@@ -29,11 +20,11 @@ const frameMetadata = getFrameMetadata({
 
 export const metadata: Metadata = {
   title: 'What\'s your frame of mind?',
-  description: 'LFG',
+  description: '🧠',
   openGraph: {
     title: 'fom.xyz',
-    description: 'LFG',
-    images: [`${NEXT_PUBLIC_URL}/park-1.png`],
+    description: '🧠',
+    images: [`${NEXT_PUBLIC_URL}/fom.webp`],
   },
   other: {
     ...frameMetadata,
