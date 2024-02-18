@@ -48,6 +48,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         },
         {
           label: `Mint 'Frame of Mind' NFT 🧠`,
+          action: 'post_redirect',
         },
       ],
       image: {
