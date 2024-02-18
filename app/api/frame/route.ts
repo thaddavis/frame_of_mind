@@ -32,6 +32,9 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     case 'caffeinated':
       imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
       break;
+    case 'happy':
+      imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
+      break;
     default:
       imgSrc = `${NEXT_PUBLIC_URL}/fom.webp`;
   }
@@ -41,7 +44,12 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: `🧠`,
+          action: 'link',
+          label: 'Go back',
+          target: 'https://dist-git-main-thaddadavis.vercel.app',
+        },
+        {
+          label: `Mint 'Frame of Mind' NFT 🧠`,
         },
       ],
       image: {
