@@ -32,7 +32,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
             },
         ],
         image: {
-            src: `${NEXT_PUBLIC_URL}/fom.webp`,
+            src: `${NEXT_PUBLIC_URL}/wyfom.webp`,
             aspectRatio: '1:1',
         },
         input: {
