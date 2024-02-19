@@ -27,7 +27,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   let imgSrc;
   switch (message?.input) {
     case 'calm':
-      imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
+      imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
       break;
     case 'caffeinated':
       imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
@@ -36,7 +36,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
       break;
     default:
-      imgSrc = `${NEXT_PUBLIC_URL}/fom.webp`;
+      throw new Error('Invalid input');
   }
   
 
