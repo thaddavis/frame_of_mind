@@ -19,9 +19,6 @@ const frameMetadata = getFrameMetadata({
     src: `${NEXT_PUBLIC_URL}/wyfom.webp`,
     aspectRatio: '1:1',
   },
-  // input: {
-  //   text: 'Describe your frame of mind',
-  // },
   postUrl: `${NEXT_PUBLIC_URL}/api/result`,
 });
 
