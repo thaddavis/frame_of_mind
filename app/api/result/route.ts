@@ -19,7 +19,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   if (message?.button === 2) {
     return NextResponse.redirect(
-      '/',
+      'https://dist-git-main-thaddadavis.vercel.app/',
       { status: 302 },
     );
   }
