@@ -34,11 +34,11 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   let imgSrc;
 
   if (message?.button === 1) {
-    imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
+    imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
   } else if (message?.button === 2) {
     imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
   } else if (message?.button === 3) {
-    imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
+    imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
   } else {
     imgSrc = `${NEXT_PUBLIC_URL}/unexpected_state.webp`;
   }
