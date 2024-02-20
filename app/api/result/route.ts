@@ -49,24 +49,17 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: 'Happy',
+          label: 'Happy 🙂',
         },
         {
-          label: 'Caffeinated',
+          label: 'Caffeinated ☕️',
         },
         {
-          label: 'Calm',
+          label: 'Calm 😌',
         },
         {
-          label: 'Mad',
-        },
-        {
-          label: 'Go back',
-        },
-        {
-          label: `Mint 'Frame of Mind' NFT 🧠`,
-          action: 'post_redirect',
-        },
+          label: 'Go back 🔙',
+        }
       ],
       image: {
         src: imgSrc,

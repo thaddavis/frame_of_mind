@@ -6,13 +6,13 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Happy',
+      label: 'Happy 🙂',
     },
     {
-      label: 'Caffeinated',
+      label: 'Caffeinated ☕️',
     },
     {
-      label: 'Calm',
+      label: 'Calm 😌',
     }
   ],
   image: {
