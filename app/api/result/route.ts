@@ -52,7 +52,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       buttons: [
         {
           label: 'Go back',
-          action: 'post_redirect',
+          action: 'post',
         },
         {
           label: `Mint 'Frame of Mind' NFT 🧠`,
