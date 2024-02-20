@@ -32,27 +32,28 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   }
 
   let imgSrc;
-  switch (message?.input) {
-    case 'calm':
-      imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
-      break;
-    case 'caffeinated':
-      imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
-      break;
-    case 'happy':
-      imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
-      break;
-    default:
-      throw new Error('Invalid input');
+
+  if (message?.button === 1) {
+    imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
+  } else if (message?.button === 2) {
+    imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
+  } else if (message?.button === 3) {
+    imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
+  } else {
+    imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
   }
-  
 
   return new NextResponse(
     getFrameHtmlResponse({
       buttons: [
         {
-          label: 'Go back',
-          action: 'post_redirect',
+          label: 'Happy',
+        },
+        {
+          label: 'Caffeinated',
+        },
+        {
+          label: 'Calm',
         },
         {
           label: `Mint 'Frame of Mind' NFT 🧠`,

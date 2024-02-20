@@ -8,14 +8,27 @@ const frameMetadata = getFrameMetadata({
     {
       label: 'Generate an image of your frame of mind',
     },
+    {
+      label: 'Happy',
+    },
+    {
+      label: 'Caffeinated',
+    },
+    {
+      label: 'Calm',
+    },
+    // {
+    //   label: `Mint 'Frame of Mind' NFT 🧠`,
+    //   action: 'post_redirect',
+    // },
   ],
   image: {
     src: `${NEXT_PUBLIC_URL}/wyfom.webp`,
     aspectRatio: '1:1',
   },
-  input: {
-    text: 'Describe your frame of mind',
-  },
+  // input: {
+  //   text: 'Describe your frame of mind',
+  // },
   postUrl: `${NEXT_PUBLIC_URL}/api/result`,
 });
 
