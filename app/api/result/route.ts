@@ -17,7 +17,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     text = message.input;
   }
 
-  if (message?.button === 1) {
+  if (message?.button === 4) {
     return NextResponse.redirect(
       'https://dist-git-main-thaddadavis.vercel.app/',
       { status: 302 },

@@ -6,9 +6,6 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Generate an image of your frame of mind',
-    },
-    {
       label: 'Happy',
     },
     {
@@ -16,11 +13,7 @@ const frameMetadata = getFrameMetadata({
     },
     {
       label: 'Calm',
-    },
-    // {
-    //   label: `Mint 'Frame of Mind' NFT 🧠`,
-    //   action: 'post_redirect',
-    // },
+    }
   ],
   image: {
     src: `${NEXT_PUBLIC_URL}/wyfom.webp`,
