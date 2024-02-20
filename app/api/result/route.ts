@@ -54,7 +54,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       image: {
         src: imgSrc,
       },
-      postUrl: `${NEXT_PUBLIC_URL}/api/post-result`,
+      postUrl: `${NEXT_PUBLIC_URL}/api/result`,
     }),
   );
 }
