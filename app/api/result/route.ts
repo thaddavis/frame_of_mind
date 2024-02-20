@@ -32,8 +32,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
   } else if (message?.button === 3) {
     imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
-  } else if (message?.button === 4) {
-    imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
   } else {
     imgSrc = `${NEXT_PUBLIC_URL}/unexpected_state.webp`;
   }
