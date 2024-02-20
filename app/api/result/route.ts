@@ -52,7 +52,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           label: 'Happy 🙂',
         },
         {
-          label: 'Caffeinated ☕️',
+          label: 'Jittery ☕️',
         },
         {
           label: 'Calm 😌',

@@ -9,7 +9,7 @@ const frameMetadata = getFrameMetadata({
       label: 'Happy 🙂',
     },
     {
-      label: 'Caffeinated ☕️',
+      label: 'Jittery ☕️',
     },
     {
       label: 'Calm 😌',
