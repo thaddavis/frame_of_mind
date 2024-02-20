@@ -24,13 +24,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     );
   }
 
-  // if (message?.button === 3) {
-  //   return NextResponse.redirect(
-  //     'https://opensea.io',
-  //     { status: 302 },
-  //   );
-  // }
-
   let imgSrc;
 
   if (message?.button === 1) {
