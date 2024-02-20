@@ -17,7 +17,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     text = message.input;
   }
 
-  if (message?.button === 2) {
+  if (message?.button === 1) {
     return NextResponse.redirect(
       'https://dist-git-main-thaddadavis.vercel.app/',
       { status: 302 },
@@ -33,16 +33,14 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 
   let imgSrc;
 
-  if (message?.button === 1) {
+  if (message?.button === 2) {
     imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
-  } else if (message?.button === 2) {
-    imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
   } else if (message?.button === 3) {
-    imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
-  }  else if (message?.button === 4) {
+    imgSrc = `${NEXT_PUBLIC_URL}/caffeinated_fom.webp`;
+  } else if (message?.button === 4) {
     imgSrc = `${NEXT_PUBLIC_URL}/happy_fom.webp`;
   } else {
-    imgSrc = `${NEXT_PUBLIC_URL}/calm_fom.webp`;
+    imgSrc = `${NEXT_PUBLIC_URL}/unexpected_state.webp`;
   }
 
   return new NextResponse(
