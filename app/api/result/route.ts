@@ -17,7 +17,14 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     text = message.input;
   }
 
-  if (message?.button === 3) {
+  if (message?.button === 1) {
+    return NextResponse.redirect(
+      '/',
+      { status: 302 },
+    );
+  }
+
+  if (message?.button === 2) {
     return NextResponse.redirect(
       'https://opensea.io',
       { status: 302 },
@@ -45,6 +52,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
       buttons: [
         {
           label: 'Go back',
+          action: 'back',
         },
         {
           label: `Mint 'Frame of Mind' NFT 🧠`,
