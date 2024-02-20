@@ -17,14 +17,14 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     text = message.input;
   }
 
-  if (message?.button === 1) {
+  if (message?.button === 2) {
     return NextResponse.redirect(
       '/',
       { status: 302 },
     );
   }
 
-  if (message?.button === 2) {
+  if (message?.button === 3) {
     return NextResponse.redirect(
       'https://opensea.io',
       { status: 302 },
